@@ -1,8 +1,8 @@
 /* eslint @typescript-eslint/camelcase: 0 */
-const companyName = 'Acme Co.';
-const shortName = 'Acme';
-const description = 'A description for your site';
-const author = 'Your Name';
+const companyName = 'Avalon Electricals';
+const shortName = 'Avalon Elec';
+const description = 'Electrical services in the South West';
+const author = 'Callum Child';
 const primaryColor = '#663399';
 
 module.exports = {

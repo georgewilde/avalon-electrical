@@ -18,7 +18,7 @@ export const Footer: FC = () => (
             rel="noopener noreferrer"
             data-testid="createdBy"
           >
-            Your Company Ltd
+            Wilde Creations Ltd
           </a>
         </div>
       </StyledFooter>
