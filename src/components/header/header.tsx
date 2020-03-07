@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, useContext } from 'react';
 
 import {
   StyledHeader,
@@ -8,18 +8,18 @@ import {
 } from './header.styled';
 import { SiteMetadataContext } from '@context/site-metadata';
 
-export const Header: FC = () => (
-  <SiteMetadataContext.Consumer>
-    {(siteMetadata): JSX.Element => (
-      <StyledHeader>
-        <StyledInner className="container">
-          <StyledLogoText>
-            <StyledLink to="/" data-testid="siteTitle">
-              {siteMetadata.companyName}
-            </StyledLink>
-          </StyledLogoText>
-        </StyledInner>
-      </StyledHeader>
-    )}
-  </SiteMetadataContext.Consumer>
-);
+export const Header: FC = () => {
+  const siteMetadata = useContext(SiteMetadataContext);
+
+  return (
+    <StyledHeader>
+      <StyledInner className="container">
+        <StyledLogoText>
+          <StyledLink to="/" data-testid="siteTitle">
+            {siteMetadata.companyName}
+          </StyledLink>
+        </StyledLogoText>
+      </StyledInner>
+    </StyledHeader>
+  );
+};

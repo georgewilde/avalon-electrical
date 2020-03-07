@@ -27,8 +27,8 @@ export const Theme: FC<ThemeProps> = ({ theme, children }) => {
 
   return (
     <ThemeProvider theme={themeToShow}>
-      <GlobalStyle />
       <GlobalFonts />
+      <GlobalStyle />
       {children}
     </ThemeProvider>
   );

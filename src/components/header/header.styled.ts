@@ -14,6 +14,7 @@ export const StyledLogoText = styled.div`
   margin: 0;
   font-weight: 400;
   font-size: 2em;
+  font-family: mister-earl, serif;
 `;
 
 export const StyledLink = styled(Link)`
