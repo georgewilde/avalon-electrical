@@ -33,7 +33,7 @@ module.exports = {
         background_color: primaryColor,
         theme_color: primaryColor,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`,
+        icon: `src/images/logo-bulb-512x512.png`,
       },
     },
     `gatsby-plugin-offline`,
